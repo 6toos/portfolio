@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+
+    <!-- home page -->
+    <div class="landing">
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark double_display navbar-dark text-light index starting">
+            <div class="container">
+                <a href="#" class="show text-light navbar-brand" id="visibility">Sixtus Offoegbu</a>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <button class="btn navbar-nav ms-sm-5 p-1 but" style="color: aqua;">
+                        <span>Download Resume</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <section class="h-auto bg-dark text-light-gray p-5 p-lg-0 pt-lg-5 text-center text-sm-start" id="home">
+            <img src="image/realBack.jpg" alt="" class="img-fit position-absolute top-0 start-0 h-auto">
+            <div class="container-sm">
+                <div class="d-sm-flex align-items-center justify-content-between gy-sm-0">
+                    <p class="fs-4 text-light text-sm-start">
+                        My name is <span class="fs-1 text-aqua">Sixtus Offoegbu</span><br>I'm a Web designer from Imo state, <br>Nigeria
+                    </p>
+                    <img src="./image/singleMe copy.png" alt="" class="bg-dark border-dark img-thumbnail">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- about page -->
+    <section class="about bg-light-gray h-auto">
+        <div class="container d-sm-grid pt-5 pb-5 about-display justify-content-between" id="about">
+            <img src="./image/profile.JPG" alt="" class="img-thumbnail thumbimage">
+            <div class="info">
+                    <h3>About <span>me</span></h3>
+                    <p>i'm a genius of my own world that likes to utilize every situation in my enviroment, I tend to bring out opportunities from every condition <br>In a situation where my resources are limited, then alone do I see the need for an external assistance</p>
+                    <div class="tab-titles fold">
+                        <p class="tab-links active-links" onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                        <p class="tab-links" onclick="opentab('education')" >Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Design</span><br> Graphics Design</li>
+                            <li><span>Web Design</span><br> Front-end Developer</li>
+                            <li><span>Programming</span><br> Beginner Java Programming</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>2015</span><br> C++ programming</li>
+                            <li><span>2018</span><br> Java programming & Web Design</li>
+                            <li><span>2021</span><br> Graphics Design</li>
+                            <li><span>2021</span><br> Front-end development at Oluaka Institute</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2014</span><br> Graduated from Dee Ultimate Comp. High School</li>
+                            <li><span>2018</span><br> Internship at Hubney</li>
+                            <li><span>2021</span><br> Graduated from FUTO</li>
+                            <li><span>2022</span><br> Graduated from Oluaka Institute of learning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service page -->
+        <section class=" service h-auto pb-lg-5 pb-4">
+            <div class="container" id="services">
+                <div class="row d-flex justify-content-center pt-5">
+                    <div class="header">
+                        <h3><span>My</span> Services</h3>
+                    </div>
+                    <div class="skills">
+                        <div class="web box">
+                            <i class="fa-brands fa-aws"></i>
+                            <h4>web design</h4>
+                            <p>
+                                i'm confident that I can provide a good web interface that meet the standard of W3 and with my great choice of colour, I provide awesome interface that'll wow my client thereby creating for them a unique result
+                            </p>
+                        </div>
+                        <div class="graphics box">
+                            <i class="fa-solid fa-image"></i>
+                            <h4>graphics design</h4>
+                            <p>
+                                My passion for beautiful designs is what motivated me to pursue a career in graphics and proud without an atom of egoism to say I've been able to make some designs for a few of my friends and their reactions were encouraging, thereby inspiring me to do more. Getting an enviroment that inspires such gesture is what i seek so as to attain more height in it
+                            </p>
+                        </div>
+                        <div class="java box">
+                            <i class="fa-solid fa-code"></i>
+                            <h4>java programming</h4>
+                            <p>
+                                Finding a solution to problems and digitalization has always been my priority since I embarked on the journey of programming and it hasn't been a bed of roses because i have explored some languages before this and i find this as one which i would have to do wonders with 
+                            </p>
+                        </div>
+                    </div>
+                </div>;
+            </div>
+        </section>
+
+        <!-- ------ Resume ------- -->
+        <section>
+            <div class="container pt-5 pb-5">
+                
+            </div>
+        </section>
+
+    <script src="script.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+// $dark: #c29938;
+
+// importing function and variables attribute...
+@import '../node_modules/bootstrap/scss/_functions';
+@import '../node_modules/bootstrap/scss/_variables';
+
+$custom-theme-color: (
+    "pink": #d43eb4,
+    "gold": #c29938,
+    "aqua": aqua,
+    "orange": #f77737,
+    "light-gray": #939396
+);
+
+$theme-colors: map-merge($custom-theme-color, $theme-colors);
+
+// import files
+@import '../node_modules/bootstrap/scss/bootstrap';

@@ -1,0 +1,176 @@
+*{
+    font-family: "poppins", "sans-serif";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --orange: #f77737
+}
+section{
+    height: 100vh;
+}
+.background{
+    background: transparent;
+}
+.starting{
+    position: relative;
+}
+.img-fit{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+.index{
+    z-index: 100;
+}
+.landing{
+    height: 100%;
+}
+
+
+/*............. about us...........  */
+.about-display{
+    grid-template-columns: 30% 65%;
+}
+.info h3 {
+    font-size: 40px;
+}
+
+h3 span {
+    color: aqua;
+}
+
+.tab-titles {
+    margin: 20px 0;
+    display: flex;
+}
+
+.tab-links,
+.tab-links2 {
+    margin-right: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after,
+.tab-links2::after {
+    content: "";
+    background-color: aqua;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+
+.tab-links.active-links::after {
+    width: 50%;
+}
+
+.tab-content ul li {
+    margin: 10px 0;
+}
+
+.tab-content ul li span {
+    color: aqua;
+    font-size: 14px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active-tab {
+    display: block;
+}
+
+/* ...............servicepage............. */
+
+.header h3{
+    color: #fff;
+}
+
+.service{
+    background-color: black;
+    clear: both;
+    position: relative;
+    text-align: center;
+    /* padding-bottom: 40px; */
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    /* font-size: clamp(10px, 20px, 10px); */
+}
+
+.skills .box {
+    width: 340px;
+    margin: 10px;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.skills div {
+    padding: 20px;
+    border-radius: 10px;
+    background: gray;
+    transition: background 0.5s, transform 0.5s;
+    position: sticky;
+}
+
+.skills div:hover {
+    background: whitesmoke;
+    transform: translateY(-10px);
+}
+
+.skills i {
+    font-size: 40px;
+    align-self: center;
+    color: var(--main);
+}
+
+.skills div h4 {
+    font-size: 1.5em;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.skilss div p {
+    font-weight: 500;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+
+    /* ***********  about us  ************** */
+
+    #about{
+        padding-top: 20px;
+    }
+    .info .fold{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-display img{
+        display: none;
+    }
+    .info h3{
+        text-align: center;
+    }
+}
