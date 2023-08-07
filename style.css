@@ -7,9 +7,19 @@
 }
 :root{
     --orange: #f77737
+    --fade: rgba(0, 255, 255, 0.2);
+    --font: whitesmoke;
+    --main: aqua;
+    --black: black;
+    --gray: gray;
 }
 section{
     height: 100vh;
+}
+.align{
+    display: flex;
+    flex-direction: column;
+    
 }
 .background{
     background: transparent;
@@ -34,6 +44,15 @@ section{
 .landing{
     height: 100%;
 }
+.social-links i {
+    margin-right: 10px;
+    font-size: 20px;
+    transition: ease-in-out 0.7s;
+}
+
+.social-links i:hover {
+    color: var(--main);
+}
 
 
 /*............. about us...........  */
@@ -45,7 +64,7 @@ section{
 }
 
 h3 span {
-    color: aqua;
+    color: var(--main);
 }
 
 .tab-titles {
@@ -64,7 +83,7 @@ h3 span {
 .tab-links::after,
 .tab-links2::after {
     content: "";
-    background-color: aqua;
+    background-color: var(--main);
     width: 0;
     height: 2px;
     position: absolute;
@@ -82,7 +101,7 @@ h3 span {
 }
 
 .tab-content ul li span {
-    color: aqua;
+    color: var(--main);
     font-size: 14px;
 }
 
@@ -97,11 +116,11 @@ h3 span {
 /* ...............servicepage............. */
 
 .header h3{
-    color: #fff;
+    color: var(--font);
 }
 
 .service{
-    background-color: black;
+    background-color: var(--black);
     clear: both;
     position: relative;
     text-align: center;
@@ -120,20 +139,26 @@ h3 span {
 .skills .box {
     width: 340px;
     margin: 10px;
-    border: 5px solid #fff;
+    border: 5px solid var(--font);
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
 }
 
 .skills div {
     padding: 20px;
     border-radius: 10px;
-    background: gray;
-    transition: background 0.5s, transform 0.5s;
+    background: var(--gray);
+    transition: background 0.5s, transform 0.5s ease-in;
     position: sticky;
+    -webkit-transition: background 0.5s, transform 0.5s ease-in;
+    -moz-transition: background 0.5s, transform 0.5s ease-in;
+    -ms-transition: background 0.5s, transform 0.5s ease-in;
+    -o-transition: background 0.5s, transform 0.5s ease-in;
 }
 
 .skills div:hover {
-    background: whitesmoke;
+    background: var(--black);
+    color: var(--gray);
+    /* border: 3px solid var(--gray); */
     transform: translateY(-10px);
 }
 
@@ -159,7 +184,12 @@ h3 span {
 @media only screen and (max-width: 600px){
 
     /* ***********  about us  ************** */
-
+    .push{
+        padding-top: 20px;
+    }
+    .push .align{
+        font-size: smaller;
+    }
     #about{
         padding-top: 20px;
     }
