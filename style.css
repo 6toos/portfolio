@@ -10,6 +10,7 @@
     --fade: rgba(0, 255, 255, 0.2);
     --font: whitesmoke;
     --main: aqua;
+    /* --main: blue; */
     --black: black;
     --gray: gray;
 }
@@ -46,8 +47,9 @@ section{
 }
 .social-links i {
     margin-right: 10px;
-    font-size: 20px;
+    font-size: 30px;
     transition: ease-in-out 0.7s;
+    color: var(--gray);
 }
 
 .social-links i:hover {
@@ -139,7 +141,7 @@ h3 span {
 .skills .box {
     width: 340px;
     margin: 10px;
-    border: 5px solid var(--font);
+    border: 3px dotted var(--font);
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
 }
 
@@ -158,7 +160,7 @@ h3 span {
 .skills div:hover {
     background: var(--black);
     color: var(--gray);
-    /* border: 3px solid var(--gray); */
+    border: 1px dotted var(--gray);
     transform: translateY(-10px);
 }
 
@@ -202,5 +204,12 @@ h3 span {
     }
     .info h3{
         text-align: center;
+    }
+    .skills .box{
+        border: 2px dashed var(--font);
+    }
+    .push{
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
