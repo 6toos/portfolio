@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../trial"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "sixtus_Offoegbu"
+	}
+}

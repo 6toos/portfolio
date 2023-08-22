@@ -1,0 +1,9 @@
+*{
+    color: antiquewhite;
+    background: black;
+}
+.todo-list{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
