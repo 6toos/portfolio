@@ -14,6 +14,11 @@
     --black: black;
     --gray: gray;
 }
+.starting.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 06);
+}
 section{
     height: 100vh;
 }
@@ -54,6 +59,11 @@ section{
 
 .social-links i:hover {
     color: var(--main);
+}
+
+.align{
+    display: grid;
+    grid-column-start: 1;
 }
 
 
@@ -186,6 +196,19 @@ h3 span {
 @media only screen and (max-width: 600px){
 
     /* ***********  about us  ************** */
+    
+    body{
+        scrollbar-width: 0;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .landing{
+        position: relative;
+        width: 100%;
+    }
+    .starting.sticky{
+        padding: 10px;
+    }
     .push{
         padding-top: 20px;
     }
